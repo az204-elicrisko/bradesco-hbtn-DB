@@ -1,7 +1,12 @@
 package entities;
 
+@Entity
 public class Curso {
-    private int id;
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    
     private String nome;
     private String sigla;
 }

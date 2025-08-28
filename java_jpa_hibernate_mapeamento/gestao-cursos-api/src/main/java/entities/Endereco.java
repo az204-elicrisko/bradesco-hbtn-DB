@@ -1,7 +1,12 @@
 package entities;
 
+@Entity
 public class Endereco {
-    private int id;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    
     private String logradouro;
     private String endereco;
     private String numero;

@@ -1,6 +1,11 @@
 package entities;
 
+@Entity
 public class MaterialCurso {
-    private int id;
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
     private String url;
 }
