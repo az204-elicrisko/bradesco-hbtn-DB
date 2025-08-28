@@ -1,5 +1,14 @@
 package entities;
 
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+
 @Entity
 public class Aluno {
 
@@ -11,4 +20,10 @@ public class Aluno {
     private String matricula;
     private String nascimento;
     private String email;
+
+    @OneToMany
+    private List<Endereco> enderecos;
+    @OneToMany
+    private List<Telefone> telefones;
+
 }
