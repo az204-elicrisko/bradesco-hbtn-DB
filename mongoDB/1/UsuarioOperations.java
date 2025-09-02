@@ -1,7 +1,3 @@
-package com.example;
-
-import com.example.MongoDBConnection;
-
 public class UsuarioOperations {
 
     private MongoCollection<Document> docsusuarios;

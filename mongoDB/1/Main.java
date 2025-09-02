@@ -1,8 +1,3 @@
-package com.example;
-
-import main.java.com.example.Usuario;
-import main.java.com.example.UsuarioOperations;
-
 public class Main {
     public static void main(String[] args) {
         MongoDBConnection connection = new MongoDBConnection();
